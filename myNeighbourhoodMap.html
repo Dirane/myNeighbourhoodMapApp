@@ -4,18 +4,12 @@
 	<title>My Neighbourhood Map</title>
 	<meta name="viewport" content="initial-scale=1.0">
 	<meta charset="utf-8">
-
-	<style>
-	#map {
-		height: 100%;
-	}
-	/* makes the page fill the window */
-	html, body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-	}
-	</style>
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxhs3gMKHFLIetnRePfL0qQzSswGWWwUo&callback=initMap" async defer></script>
+	
 </head>
 <body>
 	<div class="search-map" id="search-map">
@@ -24,25 +18,39 @@
 			
 		</ul>
 	</div>
-	<div id="map">
+	<div class="map-place" id="map-place">
 		
 	</div>
 	<script type="text/html" id="location">
 		<li class="location-item" data-bind="text: title, click: openInfowindow"></li>
 	</script>
 	<script>
-	var map;
+	/*var map;
 	function initMap() {
-		map = new google.maps.Map(document.getElementById('map'), {
-			center: {lat: -34.397, lng: 150.644},
+		map = new google.maps.Map(document.getElementById('map-place'), {
+			center: {lat: 4.159302, , lng: 9.243536},
 			zoom: 8,
 			disableDefualtUI: true
 		});
 	}
+	initMap();*/
 	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script>
-	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxhs3gMKHFLIetnRePfL0qQzSswGWWwUo&callback=initMap" async defer></script>
+	 <script>
+    var map;
+
+    function initialize() {
+      var mapOptions = {
+        zoom: 14,
+        center: new google.maps.LatLng(4.159302, 9.243536),
+        disableDefaultUI: true
+      };
+      map = new google.maps.Map(document.getElementById('map-place'),
+        mapOptions);  
+    }  
+    initialize();
+
+  </script>
+	
 	<script src="js/myNeighbourhoodMap.js"></script>
 </body>
 </html>
