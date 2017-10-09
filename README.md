@@ -9,9 +9,9 @@ First you need to have internet connection
 Download the project files and open the file 'myNeighbourhoodMap.html' with your suitable browser.
 
 ### Project comments and Credits
-On my side this was a very challenging project for me.
-
-Udacity neighbourhood map review on github[here](https://github.com/udacity/fend-office-hours/tree/master/Javascript%20Design%20Patterns/P5%20Project%20Overview).
-I had a look and got inspiration from [this](http://jshanks24.github.io/Udacity-Neighborhood-Map)
+For me this was a very challenging project.
+I made use and got inspiration from the github repo bellow provided in the course material and project rubric
+[here](https://github.com/udacity/fend-office-hours/tree/master/Javascript%20Design%20Patterns/P5%20Project%20Overview). and 
+[here](http://jshanks24.github.io/Udacity-Neighborhood-Map)
 
 

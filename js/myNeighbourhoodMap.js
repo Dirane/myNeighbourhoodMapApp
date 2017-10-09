@@ -9,8 +9,8 @@ var Location = function(title, lng, lat, venueId) {
 // getConetent function retrieves 5 most recent tips from foursquare for the marker location.
 	this.getContent = function() {
 		var topTips = [];
-		//var venueUrl = 'https://api.foursquare.com/v2/venues/' + self.venueId + '/tips?sort=recent&limit=5&v=20171006&client_id=OIMLANYCX4OK0FAVBFVAYNRXLMNKWACXQCUPIC2XW34PTPLE&client_secret=5TF5ZFIMJHMT3ECQEH0YCVQGLNDD2TZBYFRZY2UK1LLF41YM';
-		var venueUrl = 'https://api.foursquare.com/v2/venues/' + self.venueId + '/tips?sort=recent&limit=5&v=20150609&client_id=4EPS21I4V4MVCYXWDT4QNZZG1JETWZ2LIJMYQ34FNBWZ1RMV&client_secret=U3P1XLU204VMYO4BHGIWPDOY130Z1AFTT1OQTI2TY0HW0T43';
+		var venueUrl = 'https://api.foursquare.com/v2/venues/' + self.venueId + '/tips?sort=recent&limit=5&v=20131124&client_id=OIMLANYCX4OK0FAVBFVAYNRXLMNKWACXQCUPIC2XW34PTPLE&client_secret=5TF5ZFIMJHMT3ECQEH0YCVQGLNDD2TZBYFRZY2UK1LLF41YM';
+		//var venueUrl = 'https://api.foursquare.com/v2/venues/' + self.venueId + '/tips?sort=recent&limit=5&v=20150609&client_id=4EPS21I4V4MVCYXWDT4QNZZG1JETWZ2LIJMYQ34FNBWZ1RMV&client_secret=U3P1XLU204VMYO4BHGIWPDOY130Z1AFTT1OQTI2TY0HW0T43';
 
 		$.getJSON(venueUrl,
 			function(data) {
@@ -55,7 +55,8 @@ var Location = function(title, lng, lat, venueId) {
 	var locationsModel = {
 
 		locations:[
-		new Location('University Of Buea', 4.161446, 9.290732, 'ChIJQzTKNpIxYRARd0ST6rDHtr4'),
+		new Location('University Of Buea', 4.161446, 9.290732, '4cdd6918d4ecb1f701298548'),
+		//new Location('University Of Buea', 4.161446, 9.290732, 'ChIJQzTKNpIxYRARd0ST6rDHtr4'),
 		new Location('Chariot Hotel Buea', 4.157975, 0.296515, 'ChIJcT94s5QxYRARQCK3Yglrqhc'),
 		new Location('ActivSpaces Buea', 4.153117, 9.255252, 'ChIJrz8KIz8yYRARKgess8WF5Vo'),
 		new Location('Fakoship Plaza', 4.154326, 9.234717, 'ChIJk6byWl8yYRAR7saV6SkTgUc'),
