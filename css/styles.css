@@ -16,7 +16,7 @@ body,
 
 .tips,
 .search-map {
-	font-size: 1.1em;
+	font-size: 1.0em;
 }
 
 .search-map {
@@ -24,13 +24,13 @@ body,
 	max-height: 100%;
 	overflow: auto;
 	left: 1%;
-	top: 2%;
+	top: 8%;
 	z-index: 2;
 	background-color: #fff;
 	opacity: 0.8;
 }
 
-.location-list {
+.place-list {
 	padding: 0;
 	margin: 5px;
 }
@@ -40,16 +40,16 @@ body,
 	font-size: 1.5em;
 }
 
-.location-item {
+.place-item {
 	padding: 10px;
 	margin: 0;
-	background-color: #fff;
+	background-color: #ddd;
 	list-style-type: none;
 	text-align: center;
 	border: solid green 1px;
 }
 
-.location-item:hover {
+.place-item:hover {
 	background-color: #000;
 	color: #FFF;
 }
@@ -59,7 +59,7 @@ body,
 		margin-top: 52px;
 	}
 	
-	.location-list {
+	.place-list {
 		margin: 0;
 	}
 
