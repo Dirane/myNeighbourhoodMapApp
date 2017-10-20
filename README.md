@@ -12,6 +12,6 @@ Download the project files and open the file 'myNeighbourhoodMap.html' with your
 For me this was a very challenging project.
 I made use and got inspiration from the github repo bellow provided in the course material and project rubric
 [here](https://github.com/udacity/fend-office-hours/tree/master/Javascript%20Design%20Patterns/P5%20Project%20Overview). and 
-[here](http://jshanks24.github.io/Udacity-Neighborhood-Map)
+
 
 
